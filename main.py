@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
+# main.py
 # Copyright 2011 by Dominic Miglar
 
 from bottle import route, run, redirect, debug, static_file
