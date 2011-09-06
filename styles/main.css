@@ -1,0 +1,37 @@
+/* 
+    main.css - Main StyleSheet for wapstatus project
+        Copyright 2011 by Dominic Miglar
+*/
+
+body { margin: 0; padding: 0;
+       background-image: url('../pictures/stripe.png');
+       color: #ffffff;
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 90%;
+}
+
+div#container { width: 800px; height: 600px;
+                margin: 60px auto;
+                background: rgba(80, 80, 80, 0.7);
+                text-align: center;
+                border: 1px solid #999999;
+}
+
+div#container p { margin-top: 160px; 
+}
+
+div#container table { text-align: left;
+                      margin: 0 auto;
+                      margin-top: 80px;
+                      border-spacing: 30px 10px;
+}
+    div#container td { padding: 2px 3px;
+    }
+    div#container th { padding: 2px 3px;
+    }
+    div#container td.online { background-color: green;
+                              font-weight: bold;
+    }
+    div#container td.offline { background-color: red;
+                               font-weight: bold;
+    }
