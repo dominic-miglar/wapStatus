@@ -7,7 +7,7 @@
 from bottle import route, run, redirect, debug, static_file
 from bottle import jinja2_template as template
 
-from config import mainPath, host, services
+from config import mainPath, services 
 from gameStatus import gameStatus
 
 @route('/')
@@ -16,7 +16,8 @@ def index():
 
 @route(mainPath)
 def status():
-    statusResults = gameStatus(host, services)
+    statusResults = gameStatus(services) 
+    
     statusResults = statusResults.items() 
     statusResults.sort() 
     return template('child', statuses=statusResults)

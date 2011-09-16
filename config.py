@@ -4,21 +4,20 @@
 # config.py
 # Copyright 2011 by Dominic Miglar
 
+from serviceClass import Service
 
 # from '/' -> redirect to this link
 mainPath = '/status'
 
-# the host on which the services below are running
-host = 'main.we-are-players.de'
 
-# the services-list, to add a new service, just put them into this list
-# format: 'name': 'port'
-services = { 'MineCraft1': '25565',
-             'MineCraft2': '25566',
-             'MineCraft3': '25567',
-             'CounterStrike_Source': '27015',
-             'TeamFortress2': '27066',
-             'OpenSim_GridSrv': '8002',
-             'OpenSim_SimSrv1': '9000' }
+services = [
+            Service(name='MineCraft1', port=25565, hostName='main.we-are-players.de'),
+            Service(name='MineCraft2', port=25566, hostName='main.we-are-players.de'),
+            Service(name='MineCraft3', port=25567, hostName='main.we-are-players.de'),
+            Service(name='CounterStrike Source', port=27015, hostName='main.we-are-players.de'),
+            Service(name='Team Fortress 2', port=27066, hostName='main.we-are-players.de'),
+            Service(name='OpenSim Grid Srv', port=8002, hostName='main.we-are-players.de'),
+            Service(name='OpenSim Sim Srv 01', port=9000, hostName='main.we-are-players.de'),
+           ]
 
 

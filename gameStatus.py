@@ -4,17 +4,25 @@
 # gameStatus.py
 # Copyright 2011 by Dominic Miglar
 
-from config import host, services
+#from config import host, services
 from socketChecker import socketChecker
 
-def gameStatus(host, services):
+def gameStatus(services):
     returnDict = {}
-    for game, port in services.iteritems():
-        status = socketChecker(host, port)
-        if status:
+    #for game, port in services.iteritems():
+    #    status = socketChecker(host, port)
+    #    if status:
+    #        status = 'Online'
+    #    else: 
+    #        status = 'Offline'
+    #    gameStatusDict = { game: status }
+       
+    for service in services:
+        if service.status():
             status = 'Online'
-        else: 
+        else:
             status = 'Offline'
-        gameStatusDict = { game: status }
+        
+        gameStatusDict = { service.name: status }
         returnDict.update(gameStatusDict)
     return returnDict
