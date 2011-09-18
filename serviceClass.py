@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
+# serviceClass.py
+# Copyright 2011 by Dominic Miglar
 
 from socketChecker import socketChecker
 
