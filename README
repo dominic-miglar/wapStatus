@@ -1,1 +1,25 @@
-readme is comming soon! :)
+wapStatus by war10ck.serverkiller.net
+-----------------------------------------
+
+Librarys included:
+    bottle
+    jinja2
+
+wapStatus is a service-status-checker for the gaming community we-are-players.de .
+It checks, if a service is running, or not. (by connecting to the specified port).
+
+---------------------------------------------------------------------------------------
+
+The main settings are in the config.py file.
+
+Service(name, port, hostName) --> name is the name of the service, port is the port number, which the service runs on, 
+                                  and hostName is the hostName, where the service runs on.
+
+an example:
+services = [ Service(name='NameOfTheService', port='1234', hostName='example.com'),
+             Service(name='NameOfAnotherService', port='5678', hostName='anotherhost.com')
+           ]
+
+---------------------------------------------------------------------------------------
+
+more information is comming soon

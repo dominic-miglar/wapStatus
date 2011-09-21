@@ -4,7 +4,6 @@
 # gameStatus.py
 # Copyright 2011 by Dominic Miglar
 
-#from config import host, services
 from socketChecker import socketChecker
 
 def gameStatus(services):

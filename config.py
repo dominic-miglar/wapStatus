@@ -4,12 +4,16 @@
 # config.py
 # Copyright 2011 by Dominic Miglar
 
+# Import the Service Class
 from serviceClass import Service
 
 # from '/' -> redirect to this link
 mainPath = '/status'
 
 
+
+# Services: 
+# Service(name='ServiceName', port='1234', hostName='example.com')
 services = [
             Service(name='MineCraft1', port=25565, hostName='main.we-are-players.de'),
             Service(name='MineCraft2', port=25566, hostName='main.we-are-players.de'),
