@@ -4,9 +4,6 @@
 # serviceClass.py
 # Copyright 2011 by Dominic Miglar
 
-# socketChecker.py
-# Copyright 2011 by Dominic Miglar
-
 from socketChecker import socketChecker
 
 class Service(object):

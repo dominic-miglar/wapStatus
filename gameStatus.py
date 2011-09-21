@@ -8,14 +8,7 @@ from socketChecker import socketChecker
 
 def gameStatus(services):
     returnDict = {}
-    #for game, port in services.iteritems():
-    #    status = socketChecker(host, port)
-    #    if status:
-    #        status = 'Online'
-    #    else: 
-    #        status = 'Offline'
-    #    gameStatusDict = { game: status }
-       
+      
     for service in services:
         if service.status():
             status = 'Online'
