@@ -30,6 +30,10 @@ def styles(style):
 def pictures(pic):
     return static_file(pic, root='pictures')
 
+@route('/favicon.ico')
+def favicon():
+    return static_file('favicon.ico', root='pictures')
+
 debug(True)
 run(host='0.0.0.0', port='8080')
 
