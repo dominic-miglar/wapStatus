@@ -1,4 +1,4 @@
-wapStatus by war10ck.serverkiller.net
+wapStatus
 -----------------------------------------
 
 Librarys included:
@@ -22,4 +22,3 @@ services = [ Service(name='NameOfTheService', port='1234', hostName='example.com
 
 ---------------------------------------------------------------------------------------
 
-more information is comming soon
